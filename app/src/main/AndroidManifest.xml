@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.futurehouse">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:noHistory = "true">
+        <activity android:name=".ApplyProject.UIUX.UX" ></activity>
+        <activity android:name=".ApplyProject.UIUX.UI" />
+        <activity android:name=".ApplyProject.AndroidDeveloper.AndroidBack" />
+        <activity android:name=".ApplyProject.AndroidDeveloper.AndroidFront" />
+        <activity android:name=".MyProject.MyProjectExperience" />
+        <activity android:name=".MyProject.MyProjectPortfolio" />
+        <activity android:name=".CreateProject.CreateProjectReview" />
+        <activity android:name=".CreateProject.CreateProjectRequirement" />
+        <activity android:name=".ApplyProject.JobDescriptionPage" />
+        <activity android:name=".MyProject.MyProjectCreatedRequirement" />
+        <activity android:name=".MyProject.MyProjectCreatedSelect" />
+        <activity android:name=".MyProject.MyProjectCreatedPro" />
+        <activity android:name=".MyProject.MyProjectApplied" />
+        <activity android:name=".Login.SignIn" />
+        <activity android:name=".Login.SignUp" />
+        <activity android:name=".Profile.ProfilePageReview" />
+        <activity android:name=".Profile.ProfilePageExperience" />
+        <activity android:name=".Profile.ProfilePagePortfolio" />
+        <activity android:name=".Profile.EditProfile" />
+        <activity android:name=".Profile.EditProfilePassword" />
+        <activity android:name=".ApplyProject.JobAppliedPage" />
+        <activity android:name=".CreateProject.CreateProject" />
+        <activity android:name=".ApplyProject.WebDeveloper.WebBack" />
+        <activity android:name=".ApplyProject.WebDeveloper.WebFront" />
+        <activity android:name=".Home" />
+        <activity android:name=".MyProject.MyProjectReview" />
+        <activity android:name=".CreateProject.PostSuccess" />
+        <activity android:name=".Login.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

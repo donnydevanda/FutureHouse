@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "848705337107",
+    "firebase_url": "https://futurehouse-1945.firebaseio.com",
+    "project_id": "futurehouse-1945",
+    "storage_bucket": "futurehouse-1945.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848705337107:android:f584f10e6a0d5af8750ce6",
+        "android_client_info": {
+          "package_name": "com.example.futurehouse1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "848705337107-dtrosmo81b3p716klo3brqcdv9fpl800.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHbaRtYJjiSrOgffe29M2ay4Jt7V5IJpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "848705337107-dtrosmo81b3p716klo3brqcdv9fpl800.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

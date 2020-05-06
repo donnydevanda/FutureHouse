@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">FutureHouse</string>
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="signup">SIGN UP</string>
+    <string name="name">NAME</string>
+    <string name="change_picture">CHANGE PICTURE</string>
+    <string name="profile">PROFILE</string>
+    <string name="back">BACK</string>
+    <string name="email">E-MAIL</string>
+    <string name="phone_number">PHONE NUMBER</string>
+    <string name="location">LOCATION</string>
+    <string name="save">SAVE</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="edit_profile">EDIT PROFILE</string>
+    <string name="edit_password">EDIT PASSWORD</string>
+    <string name="current_password">CURRENT PASSWORD</string>
+    <string name="new_password">NEW PASSWORD</string>
+    <string name="new_password_confirmation">NEW PASSWORD (CONFIRMATION)</string>
+    <string name="apply_success">Apply Success!</string>
+    <string name="inform">We\'ll inform you when it applies.</string>
+    <string name="back_to_home">BACK TO HOME</string>
+    <string name="experience">Experience</string>
+    <string name="portfolio">Portfolio</string>
+    <string name="review">Review</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="login">Login</string>
+    <string name="browse_job">Browse Job</string>
+    <string name="edit">EDIT</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="created_project">Created Project</string>
+    <string name="my_project">MY PROJECT</string>
+    <string name="applied_project">Applied Project</string>
+    <string name="front_web">Front-End</string>
+    <string name="back_end">Back-End</string>
+    <string name="ux">User Experience</string>
+    <string name="ui">User Interface</string>
+    <string name="web_developer">Web Developer</string>
+    <string name="android_developer">Android Developer</string>
+    <string name="uiux">UI/UX</string>
+    <string name="create_project">CREATE PROJECT</string>
+    <string name="project_name">Project Name</string>
+    <string name="project_description">Project Description</string>
+    <string name="project_duration">Project Duration (Optional)</string>
+    <string name="address">Address</string>
+    <string name="web_front">Web Front End</string>
+    <string name="overall">Overall</string>
+    <string name="android_web">Android or Web?</string>
+    <string name="skills_qual">Skills and Qualifications:</string>
+    <string name="salary">Salary:</string>
+
+    <string-array name="brew_array">
+        <item>Cappuccino</item>
+        <item>Espresso</item>
+        <item>Mocha</item>
+        <item>Caffè Americano</item>
+        <item>Cafe Zorro</item>
+    </string-array>
+</resources>
+

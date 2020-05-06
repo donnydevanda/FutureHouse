@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ApplyProject.JobAppliedPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/btn_checkbox"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_check_box" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Post Success!"
+            android:textSize="21sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="We'll inform you when someone apply to your project."
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/btn_back_home"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rectangle_pink"
+            android:text="BACK TO HOME"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
