@@ -33,7 +33,6 @@ class ProjectAdapter(private var data: List<Project>,
     class LeagueViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         private val tvTitle: TextView = view.findViewById(R.id.item_title)
-        private val tvDesc: TextView = view.findViewById(R.id.item_desc)
         private val tvAddress: TextView = view.findViewById(R.id.item_address)
 
         //private val tvImage: ImageView = view.findViewById(R.id.iv_poster_image)
@@ -41,7 +40,6 @@ class ProjectAdapter(private var data: List<Project>,
         fun bindItem(data: Project, listener: (Project) -> Unit, context : Context, position : Int) {
 
             tvTitle.text = data.title
-            tvDesc.text = data.desc
             tvAddress.text = data.address
 
             itemView.setOnClickListener {

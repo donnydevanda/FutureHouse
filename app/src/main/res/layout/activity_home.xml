@@ -35,6 +35,7 @@
         </RelativeLayout>
 
         <ImageView
+            android:id="@+id/home_pic"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginLeft="20dp"
@@ -149,25 +150,6 @@
                             android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:src="@drawable/bg_web" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:id="@+id/android"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/android_developer"
-                            android:textColor="@color/colorAccent"
-                            android:textSize="16sp" />
-
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:src="@drawable/bg_android" />
                     </RelativeLayout>
 
                     <RelativeLayout

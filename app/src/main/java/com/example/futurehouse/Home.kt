@@ -3,8 +3,9 @@ package com.example.futurehouse
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.example.futurehouse.ApplyProject.AllPage
-import com.example.futurehouse.ApplyProject.AndroidDeveloper.AndroidFront
 import com.example.futurehouse.ApplyProject.UIUX.UI
 import com.example.futurehouse.ApplyProject.WebDeveloper.WebFront
 import com.example.futurehouse.CreateProject.CreateProject
@@ -18,13 +19,21 @@ import kotlinx.android.synthetic.main.activity_home.*
 class Home : AppCompatActivity() {
 
     private lateinit var preferences: Preferences
+    lateinit var mDatabase: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        preferences = Preferences(this)
-        tv_name.setText(preferences.getValues("username"))
+        preferences = Preferences(this.applicationContext)
+        mDatabase = FirebaseDatabase.getInstance().getReference("User")
+
+        tv_name.text = "Welcome " + preferences.getValues("user") +" !"
+
+        Glide.with(this)
+            .load(preferences.getValues("url"))
+            .apply(RequestOptions.circleCropTransform())
+            .into(home_pic)
 
         //CREATE PROJECT
         btn_next.setOnClickListener {
@@ -49,15 +58,6 @@ class Home : AppCompatActivity() {
             val intent = Intent(
                 this@Home,
                 WebFront::class.java
-            )
-            startActivity(intent)
-        }
-
-        //FIND PROJECT (ANDROID)
-        android.setOnClickListener {
-            val intent = Intent(
-                this@Home,
-                AndroidFront::class.java
             )
             startActivity(intent)
         }

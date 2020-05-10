@@ -2,7 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.futurehouse">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+    android:name="android.hardware.camera"
+    android:required="true" />
+
     <application
+        android:requestLegacyExternalStorage="true"
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
@@ -10,7 +25,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ApplyProject.AllPage"></activity>
+        <activity android:name=".Login.SignUpPhoto"></activity>
+        <activity android:name=".ApplyProject.AllPage" />
         <activity android:name=".ApplyProject.UIUX.UX" />
         <activity android:name=".ApplyProject.UIUX.UI" />
         <activity android:name=".ApplyProject.AndroidDeveloper.AndroidBack" />

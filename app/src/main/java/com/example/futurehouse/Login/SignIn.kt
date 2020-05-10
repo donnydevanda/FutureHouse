@@ -50,9 +50,30 @@ class SignIn : AppCompatActivity() {
     private fun pushLogin(iUsername: String, iPassword: String) {
         mDatabase.child(iUsername).addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
+
+                val user = dataSnapshot.getValue(User::class.java)
+                if (user == null) {
+                    Toast.makeText(this@SignIn, "Wrong Username / Password", Toast.LENGTH_LONG).show()
+
+                } else {
+                    if (user.password.equals(iPassword)){
+                        Toast.makeText(this@SignIn, "Welcome!", Toast.LENGTH_LONG).show()
+
+                        preferences.setValues("user", user.username.toString())
+                        preferences.setValues("email", user.email.toString())
+                        preferences.setValues("status", "1")
+
+                        finishAffinity()
+
                         val intent = Intent(this@SignIn,
                             Home::class.java)
                         startActivity(intent)
+
+                    } else {
+                        Toast.makeText(this@SignIn, "Wrong Username / Password", Toast.LENGTH_LONG).show()
+                    }
+
+                }
             }
 
             override fun onCancelled(error: DatabaseError) {

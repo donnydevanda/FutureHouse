@@ -52,6 +52,21 @@
     <string name="all_project">All Project</string>
     <string name="address">Address</string>
     <string name="desc">Desc</string>
+    <string name="registration_form">Registration Form</string>
+    <string name="welcome">Welcome!</string>
+    <string name="save_and_continue">Save and Continue</string>
+    <string name="upload_later">Upload Later</string>
+    <string name="apply">Apply</string>
+    <string name="description">Description</string>
+    <string name="description_desc">Description Desc</string>
+    <string name="overall_desc">Overall Desc</string>
+    <string name="front_end">Front-End</string>
+    <string name="front_end_desc">Front-End Desc</string>
+    <string name="back_end_desc">Back-End Desc</string>
+    <string name="user_interface_desc">User Interface Desc</string>
+    <string name="user_experience_desc">User Experience Desc</string>
+    <string name="duration">Duration</string>
+    <string name="duration_desc">Duration Desc</string>
 
     <string-array name="brew_array">
         <item>Cappuccino</item>

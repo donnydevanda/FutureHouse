@@ -29,7 +29,7 @@ class AllPage : AppCompatActivity() {
         rv_player_all.layoutManager = LinearLayoutManager(this@AllPage, LinearLayoutManager.VERTICAL, false)
         getData()
 
-        text_back_all.setOnClickListener{
+        btn_back_all.setOnClickListener{
             val intent = Intent(this@AllPage,
                 Home::class.java)
             startActivity(intent)
@@ -57,7 +57,7 @@ class AllPage : AppCompatActivity() {
 
                 rv_player_all.adapter = ProjectAdapter(dataList) {
                     val intent = Intent(this@AllPage,
-                        JobDescriptionPage::class.java)
+                        JobDescriptionPage::class.java).putExtra("data", it)
                     startActivity(intent)
                 }
 

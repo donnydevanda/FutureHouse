@@ -1,7 +1,9 @@
 package com.example.futurehouse.Login
 
+import android.Manifest
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.futurehouse.Home
@@ -91,7 +93,7 @@ class SignUp : AppCompatActivity() {
                     preferences.setValues("status", "1")
 
                     val intent = Intent(this@SignUp,
-                         Home::class.java)
+                         SignUpPhoto::class.java)
                      startActivity(intent)
 
                 } else {
