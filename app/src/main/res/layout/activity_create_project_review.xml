@@ -24,7 +24,7 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_alignParentLeft="true"
-                android:src="@drawable/ic_arrow_back_blue" />
+                app:srcCompat="@drawable/ic_arrow_back_blue" />
 
             <TextView
                 android:id="@+id/text_back"
@@ -69,48 +69,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/shape_find_blue"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="20dp"
-                        android:text="@string/overall"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="30dp"
-                        android:text="@string/android_web"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="16sp" />
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/shape_rectangle_white_border"
-                        android:paddingLeft="15dp"
-                        android:textColor="@color/colorPrimaryDark" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:background="@drawable/shape_find_blue"
+                    android:background="@drawable/shape_bg_blue"
                     android:orientation="vertical">
 
                     <TextView
@@ -124,53 +84,25 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="30dp"
-                        android:text="@string/skills_qual"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="16sp" />
-
                     <EditText
+                        android:id="@+id/form_frontend"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_height="80dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginRight="20dp"
-                        android:background="@drawable/shape_rectangle_white_border"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/shape_rectangle_white_border2"
                         android:paddingLeft="15dp"
                         android:textColor="@color/colorPrimaryDark" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="30dp"
-                        android:text="@string/salary"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="16sp" />
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/shape_rectangle_white_border"
-                        android:paddingLeft="15dp"
-                        android:textColor="@color/colorPrimaryDark" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:background="@drawable/shape_find_blue"
+                    android:background="@drawable/shape_bg_blue"
                     android:orientation="vertical">
 
                     <TextView
@@ -184,53 +116,25 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="30dp"
-                        android:text="@string/skills_qual"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="16sp" />
-
                     <EditText
+                        android:id="@+id/form_backend"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_height="80dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginRight="20dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/shape_rectangle_white_border"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/shape_rectangle_white_border2"
                         android:paddingLeft="15dp"
                         android:textColor="@color/colorPrimaryDark" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="30dp"
-                        android:text="@string/salary"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="16sp" />
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/shape_rectangle_white_border"
-                        android:paddingLeft="15dp"
-                        android:textColor="@color/colorPrimaryDark" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:background="@drawable/shape_find_blue"
+                    android:background="@drawable/shape_bg_blue"
                     android:orientation="vertical">
 
                     <TextView
@@ -244,53 +148,25 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="30dp"
-                        android:text="@string/skills_qual"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="16sp" />
-
                     <EditText
+                        android:id="@+id/form_ui"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_height="80dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginRight="20dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/shape_rectangle_white_border"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/shape_rectangle_white_border2"
                         android:paddingLeft="15dp"
                         android:textColor="@color/colorPrimaryDark" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="30dp"
-                        android:text="@string/salary"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="16sp" />
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/shape_rectangle_white_border"
-                        android:paddingLeft="15dp"
-                        android:textColor="@color/colorPrimaryDark" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:background="@drawable/shape_find_blue"
+                    android:background="@drawable/shape_bg_blue"
                     android:orientation="vertical">
 
                     <TextView
@@ -304,50 +180,22 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="30dp"
-                        android:text="@string/skills_qual"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="16sp" />
-
                     <EditText
+                        android:id="@+id/form_ux"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_height="80dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginRight="20dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/shape_rectangle_white_border"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/shape_rectangle_white_border2"
                         android:paddingLeft="15dp"
                         android:textColor="@color/colorPrimaryDark" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="30dp"
-                        android:text="@string/salary"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="16sp" />
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/shape_rectangle_white_border"
-                        android:paddingLeft="15dp"
-                        android:textColor="@color/colorPrimaryDark" />
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/btn_next"
+                    android:id="@+id/btn_next_cpr"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"

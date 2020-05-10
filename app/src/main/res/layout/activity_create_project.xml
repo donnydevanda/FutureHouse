@@ -20,7 +20,7 @@
             <ImageView
                 android:id="@+id/btn_back"
                 android:layout_alignParentLeft="true"
-                android:src="@drawable/ic_arrow_back_blue"
+                app:srcCompat="@drawable/ic_arrow_back_blue"
                 android:layout_width="25dp"
                 android:layout_height="25dp"/>
 
@@ -50,7 +50,7 @@
             android:textStyle="bold" />
         <ImageView
             android:id="@+id/ic_user"
-            android:src="@drawable/ic_user2"
+            app:srcCompat="@drawable/ic_user2"
             android:layout_gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"/>
@@ -105,7 +105,10 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="40dp"
             android:background="@drawable/shape_find_blue"
-            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:textColor="@color/colorPrimaryDark" />
 
         <TextView
@@ -151,7 +154,7 @@
             android:textColor="@color/colorPrimaryDark" />
 
         <Button
-            android:id="@+id/btn_next"
+            android:id="@+id/btn_next_cp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"

@@ -5,4 +5,8 @@ class Project {
     var desc: String ?=""
     var address: String ?=""
     var duration: String ?=""
+    var frontend: String ?=""
+    var backend: String ?=""
+    var ui: String ?=""
+    var ux: String ?=""
 }
