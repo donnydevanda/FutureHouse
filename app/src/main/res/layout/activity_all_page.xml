@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ApplyProject.WebDeveloper.WebBack"
-    android:background="@color/colorPrimary">
+    tools:context="com.example.futurehouse.ApplyProject.AllPage">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="320dp"
-            android:background="@drawable/bg_uiux"
+            android:background="@drawable/bg_all"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -25,14 +24,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:id="@+id/btn_back_ui"
+                    android:id="@+id/btn_back_all"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_arrow_back" />
 
                 <TextView
-                    android:id="@+id/text_back_ui"
+                    android:id="@+id/text_back_all"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -47,7 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/ui"
+                android:text="All\nProject"
                 android:textColor="@color/colorPrimary"
                 android:textSize="70sp" />
 
@@ -59,28 +58,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/text_left"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/ui"
-                    android:textColor="@color/colorAccent"
-                    android:textSize="16sp" />
-
-                <TextView
                     android:id="@+id/text_right"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:text="@string/ux"
-                    android:textColor="@color/colorPrimary"
+                    android:text=""
+                    android:textColor="@color/colorAccent"
                     android:textSize="16sp" />
-
             </LinearLayout>
-
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_player"
+            android:id="@+id/rv_player_all"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="-30dp"
@@ -88,12 +76,7 @@
             android:background="@drawable/shape_rectangle_blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/topBarMain"
-            app:layout_constraintVertical_bias="0.0"
-            tools:listitem="@layout/item_list"
-            />
+            tools:listitem="@layout/item_list" />
     </LinearLayout>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

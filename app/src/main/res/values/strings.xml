@@ -42,12 +42,16 @@
     <string name="project_name">Project Name</string>
     <string name="project_description">Project Description</string>
     <string name="project_duration">Project Duration (Optional)</string>
-    <string name="address">Address</string>
     <string name="web_front">Web Front End</string>
     <string name="overall">Overall</string>
     <string name="android_web">Android or Web?</string>
     <string name="skills_qual">Skills and Qualifications:</string>
     <string name="salary">Salary:</string>
+    <string name="title">Title</string>
+    <string name="detail">Detail</string>
+    <string name="all_project">All Project</string>
+    <string name="address">Address</string>
+    <string name="desc">Desc</string>
 
     <string-array name="brew_array">
         <item>Cappuccino</item>

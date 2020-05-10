@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home"
     android:background="@color/colorPrimary">
 
     <LinearLayout
@@ -40,9 +39,10 @@
             android:layout_height="100dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
-            android:src="@drawable/ic_user2" />
+            app:srcCompat="@drawable/ic_user2" />
         <TextView
-            android:text="Hello Gregoryus,"
+            android:id="@+id/tv_name"
+            android:text="Hello Gregoryus"
             android:textSize="14sp"
             android:textColor="@color/colorPrimaryDark"
             android:layout_marginTop="5dp"
@@ -77,7 +77,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <RelativeLayout
-                android:id="@+id/lyt_New"
                 android:layout_marginLeft="40dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -105,8 +104,8 @@
             android:orientation="vertical">
 
             <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="157dp"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp">
 
@@ -116,12 +115,30 @@
                     android:orientation="horizontal">
 
                     <RelativeLayout
-                        android:id="@+id/web"
+                        android:id="@+id/all"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:id="@+id/txt_ContentCreator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/all_project"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/bg_all" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/web"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/web_developer"
@@ -129,10 +146,9 @@
                             android:textSize="16sp" />
 
                         <ImageView
-                            android:id="@+id/imageView4"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
-                            android:src="@drawable/bg_webdev" />
+                            android:src="@drawable/bg_web" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -142,7 +158,6 @@
                         android:layout_marginLeft="20dp">
 
                         <TextView
-                            android:id="@+id/txt_GameDeveloper"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/android_developer"
@@ -152,7 +167,7 @@
                         <ImageView
                             android:layout_width="150dp"
                             android:layout_height="150dp"
-                            android:src="@drawable/bg_anddev" />
+                            android:src="@drawable/bg_android" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -163,7 +178,6 @@
                         android:layout_marginRight="20dp">
 
                         <TextView
-                            android:id="@+id/txt_Writer"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/uiux"
@@ -171,10 +185,9 @@
                             android:textSize="16sp" />
 
                         <ImageView
-                            android:id="@+id/imageView5"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
-                            android:src="@drawable/bg_ui_ux" />
+                            android:src="@drawable/bg_uiux" />
                     </RelativeLayout>
                 </LinearLayout>
             </HorizontalScrollView>

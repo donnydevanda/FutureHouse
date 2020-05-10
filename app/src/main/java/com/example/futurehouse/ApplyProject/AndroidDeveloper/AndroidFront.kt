@@ -17,6 +17,20 @@ class AndroidFront : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_android_front)
 
+        text_back_af.setOnClickListener{
+            val intent = Intent(this@AndroidFront,
+                Home::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        text_back_af.setOnClickListener{
+            val intent = Intent(this@AndroidFront,
+                Home::class.java)
+            startActivity(intent)
+            finish()
+        }
+
         text_right.setOnClickListener{
             val intent = Intent(this@AndroidFront,
                 AndroidBack::class.java)

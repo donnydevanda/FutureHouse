@@ -82,7 +82,7 @@
             android:textSize="12sp" />
 
         <Button
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_signin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
