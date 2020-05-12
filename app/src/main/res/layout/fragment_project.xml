@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.futurehouse.MyProject.MyProjectCreatedPro"
-    android:background="#ffffff">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.futurehouse.ProjectFragment"
+    android:background="@color/colorPrimary">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +17,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginBottom="50dp">
+            android:layout_marginBottom="40dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -41,7 +40,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
             android:layout_marginRight="30dp">
 
             <TextView
@@ -52,26 +50,28 @@
                 android:layout_marginLeft="40dp"
                 android:text="Applied Project"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="16sp" />
+                android:textSize="20sp"
+                android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/text_created_project"
+                android:id="@+id/text_browse_applied"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="40dp"
-                android:text="Created Project"
+                android:text="Browse"
                 android:textColor="@color/colorAccent"
                 android:textSize="16sp" />
         </RelativeLayout>
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="480dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/shape_find_blue">
 
             <LinearLayout
@@ -93,11 +93,59 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginRight="20dp"
+                    android:layout_marginBottom="30dp"
                     android:background="@drawable/shape_rectangle_white_border">
 
                 </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:id="@+id/text_created_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:text="Created Project"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_browse_created"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:text="Browse"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_find_blue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -113,8 +161,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginRight="20dp"
+                    android:layout_marginBottom="30dp"
                     android:background="@drawable/shape_rectangle_white_border">
 
                 </RelativeLayout>
@@ -123,40 +172,4 @@
         </ScrollView>
     </LinearLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="@drawable/navbar_bg"
-            android:gravity="center_horizontal|center_vertical"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:layout_editor_absoluteX="1dp">
-
-            <ImageView
-                android:id="@+id/nav_home"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/navbar_home_off" />
-
-            <ImageView
-                android:id="@+id/nav_myproject"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/navbar_my_project_active" />
-
-            <ImageView
-                android:id="@+id/nav_profile"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/navbar_profile_off" />
-        </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</RelativeLayout>
+</FrameLayout>

@@ -3,27 +3,18 @@ package com.example.futurehouse.ApplyProject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.futurehouse.CreateProject.Project
 import com.example.futurehouse.R
-import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_job_description_page.*
 
 class JobDescriptionPage : AppCompatActivity() {
-
-    lateinit var mDatabase: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_job_description_page)
 
         val data = intent.getParcelableExtra<Project>("data")
-
-        mDatabase = FirebaseDatabase.getInstance().getReference("Film")
-            .child(data.title.toString())
-            .child("play")
 
         titlemain.text = data.title
         address.text = data.address
@@ -33,10 +24,10 @@ class JobDescriptionPage : AppCompatActivity() {
         back_desc.text = data.backend
         ui_desc.text = data.ui
         ux_desc.text = data.ux
+        Glide.with(this)
+            .load(data.images)
+            .into(image_jd)
 
-        /*Glide.with(this)
-            .load(data.poster)
-            .into(iv_poster)*/
 
         btn_back_jd.setOnClickListener{
             val intent = Intent(this@JobDescriptionPage,

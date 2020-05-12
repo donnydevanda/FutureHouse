@@ -51,7 +51,7 @@ class SignUpPhoto : AppCompatActivity(), PermissionListener {
 
             } else {
                 ImagePicker.with(this)
-                    .crop()	    			//Crop image(Optional), Check Customization for more option
+                    .cropSquare()
                     .compress(1024)			//Final image size will be less than 1 MB(Optional)
                     .maxResultSize(1080, 1080)	//Final image resolution will be less than 1080 x 1080(Optional)
                     .start()
@@ -73,7 +73,7 @@ class SignUpPhoto : AppCompatActivity(), PermissionListener {
                 progressDialog.setTitle("Uploading...")
                 progressDialog.show()
 
-                val ref = storageReference.child("images/" + UUID.randomUUID().toString())
+                val ref = storageReference.child("users/" + UUID.randomUUID().toString())
                 ref.putFile(filePath)
                     .addOnSuccessListener {
                         progressDialog.dismiss()
@@ -100,7 +100,6 @@ class SignUpPhoto : AppCompatActivity(), PermissionListener {
                         progressDialog.setMessage("Uploaded " + progress.toInt() + "%")
                     }
             }
-
         }
     }
 
@@ -130,22 +129,6 @@ class SignUpPhoto : AppCompatActivity(), PermissionListener {
         Toast.makeText(this, "In hurry? Choose upload later", Toast.LENGTH_LONG ).show()
     }
 
-    /* @SuppressLint("MissingSuperCall")
-     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
-             var bitmap = data?.extras?.get("data") as Bitmap
-             statusAdd = true
-
-             filePath = data.getData()!!
-             Glide.with(this)
-                 .load(bitmap)
-                 .apply(RequestOptions.circleCropTransform())
-                 .into(iv_profile)
-
-             btn_save.visibility = View.VISIBLE
-             iv_add.setImageResource(R.drawable.ic_delete)
-         }
-     }*/
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (resultCode == Activity.RESULT_OK) {

@@ -1,4 +1,4 @@
-package com.example.futurehouse.ApplyProject
+package com.example.futurehouse.CreateProject
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,7 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.futurehouse.CreateProject.Project
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.example.futurehouse.R
 
 class ProjectAdapter(private var data: List<Project>,
@@ -21,7 +22,9 @@ class ProjectAdapter(private var data: List<Project>,
         ContextAdapter = parent.context
         val inflatedView: View = layoutInflater.inflate(R.layout.item_list, parent, false)
 
-        return LeagueViewHolder(inflatedView)
+        return LeagueViewHolder(
+            inflatedView
+        )
     }
 
     override fun onBindViewHolder(holder: LeagueViewHolder, position: Int) {
@@ -34,13 +37,17 @@ class ProjectAdapter(private var data: List<Project>,
 
         private val tvTitle: TextView = view.findViewById(R.id.item_title)
         private val tvAddress: TextView = view.findViewById(R.id.item_address)
-
-        //private val tvImage: ImageView = view.findViewById(R.id.iv_poster_image)
+        private val tvImage: ImageView = view.findViewById(R.id.item_image)
 
         fun bindItem(data: Project, listener: (Project) -> Unit, context : Context, position : Int) {
 
             tvTitle.text = data.title
             tvAddress.text = data.address
+            Glide.with(context)
+                .load(data.images)
+                .into(tvImage);
+
+
 
             itemView.setOnClickListener {
                 listener(data)

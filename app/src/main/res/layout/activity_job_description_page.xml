@@ -50,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/image_jd"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginLeft="20dp"

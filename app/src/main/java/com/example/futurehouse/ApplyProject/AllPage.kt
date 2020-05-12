@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.futurehouse.CreateProject.Project
+import com.example.futurehouse.CreateProject.ProjectAdapter
 import com.example.futurehouse.Home
 import com.example.futurehouse.R
 import com.example.futurehouse.Utils.Preferences
@@ -30,16 +31,10 @@ class AllPage : AppCompatActivity() {
         getData()
 
         btn_back_all.setOnClickListener{
-            val intent = Intent(this@AllPage,
-                Home::class.java)
-            startActivity(intent)
             finish()
         }
 
         text_back_all.setOnClickListener{
-            val intent = Intent(this@AllPage,
-                Home::class.java)
-            startActivity(intent)
             finish()
         }
     }
@@ -55,11 +50,14 @@ class AllPage : AppCompatActivity() {
                     dataList.add(projectX!!)
                 }
 
-                rv_player_all.adapter = ProjectAdapter(dataList) {
-                    val intent = Intent(this@AllPage,
-                        JobDescriptionPage::class.java).putExtra("data", it)
-                    startActivity(intent)
-                }
+                rv_player_all.adapter =
+                    ProjectAdapter(dataList) {
+                        val intent = Intent(
+                            this@AllPage,
+                            JobDescriptionPage::class.java
+                        ).putExtra("data", it)
+                        startActivity(intent)
+                    }
 
             }
 

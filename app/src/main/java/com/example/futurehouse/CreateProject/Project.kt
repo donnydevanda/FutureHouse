@@ -12,5 +12,6 @@ data class Project (
     var frontend: String ?="",
     var backend: String ?="",
     var ui: String ?="",
-    var ux: String ?=""
+    var ux: String ?="",
+    var images: String ?=""
 ): Parcelable

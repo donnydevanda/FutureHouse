@@ -13,37 +13,31 @@
     <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <uses-feature
-    android:name="android.hardware.camera"
-    android:required="true" />
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
-        android:requestLegacyExternalStorage="true"
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:noHistory="true"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login.SignUpPhoto"></activity>
+        <activity android:name=".ProjectFragment"></activity>
+        <activity android:name=".Login.SignUpPhoto" />
         <activity android:name=".ApplyProject.AllPage" />
         <activity android:name=".ApplyProject.UIUX.UX" />
         <activity android:name=".ApplyProject.UIUX.UI" />
-        <activity android:name=".ApplyProject.AndroidDeveloper.AndroidBack" />
-        <activity android:name=".ApplyProject.AndroidDeveloper.AndroidFront" />
         <activity android:name=".MyProject.MyProjectExperience" />
         <activity android:name=".MyProject.MyProjectPortfolio" />
         <activity android:name=".CreateProject.CreateProjectReview" />
         <activity android:name=".ApplyProject.JobDescriptionPage" />
         <activity android:name=".MyProject.MyProjectCreatedRequirement" />
         <activity android:name=".MyProject.MyProjectCreatedSelect" />
-        <activity android:name=".MyProject.MyProjectCreatedPro" />
-        <activity android:name=".MyProject.MyProjectApplied" />
         <activity android:name=".Login.SignIn" />
         <activity android:name=".Login.SignUp" />
-        <activity android:name=".Profile.ProfilePageReview" />
-        <activity android:name=".Profile.ProfilePageExperience" />
-        <activity android:name=".Profile.ProfilePagePortfolio" />
         <activity android:name=".Profile.EditProfile" />
         <activity android:name=".Profile.EditProfilePassword" />
         <activity android:name=".ApplyProject.JobAppliedPage" />
@@ -56,7 +50,6 @@
         <activity android:name=".Login.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
