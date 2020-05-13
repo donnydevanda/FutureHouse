@@ -69,8 +69,8 @@ class CreateProjectReview : AppCompatActivity() {
         }
     }
 
-    private fun saveProject(sTitle: String, sDesc: String, sAddress: String, sDuration: String,
-                            sImage: String, sFront: String, sBack: String, sUI: String, sUX: String) {
+    private fun saveProject(sTitle: String?, sDesc: String?, sAddress: String?, sDuration: String?,
+                            sImage: String?, sFront: String?, sBack: String?, sUI: String?, sUX: String?) {
         val project = Project()
         project.title = sTitle
         project.desc = sDesc

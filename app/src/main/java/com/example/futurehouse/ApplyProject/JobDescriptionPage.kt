@@ -16,16 +16,16 @@ class JobDescriptionPage : AppCompatActivity() {
 
         val data = intent.getParcelableExtra<Project>("data")
 
-        titlemain.text = data.title
-        address.text = data.address
-        dur_desc.text = data.duration
-        desc_desc.text = data.desc
-        front_desc.text = data.frontend
-        back_desc.text = data.backend
-        ui_desc.text = data.ui
-        ux_desc.text = data.ux
+        titlemain.text = data?.title
+        address.text = data?.address
+        dur_desc.text = data?.duration
+        desc_desc.text = data?.desc
+        front_desc.text = data?.frontend
+        back_desc.text = data?.backend
+        ui_desc.text = data?.ui
+        ux_desc.text = data?.ux
         Glide.with(this)
-            .load(data.images)
+            .load(data?.images)
             .into(image_jd)
 
 

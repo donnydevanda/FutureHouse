@@ -46,7 +46,7 @@ class AllPage : AppCompatActivity() {
                 dataList.clear()
                 for (getdataSnapshot in dataSnapshot.getChildren()) {
 
-                    val projectX = getdataSnapshot.getValue(Project::class.java!!)
+                    val projectX = getdataSnapshot.getValue(Project::class.java)
                     dataList.add(projectX!!)
                 }
 
