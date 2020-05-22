@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.futurehouse.HomeFragment"
+    tools:context="com.example.futurehouse.Fragment.HomeFragment"
     android:background="@color/colorPrimary">
 
     <LinearLayout
@@ -31,7 +31,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
-            app:srcCompat="@drawable/ic_help" />
+            app:srcCompat="@drawable/ic_help_blue" />
     </RelativeLayout>
 
     <ImageView

@@ -3,9 +3,8 @@ package com.example.futurehouse.ApplyProject.WebDeveloper
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.futurehouse.Home
+import com.example.futurehouse.Fragment.Navbar
 import com.example.futurehouse.R
-import kotlinx.android.synthetic.main.activity_u_i.*
 import kotlinx.android.synthetic.main.activity_u_i.text_right
 import kotlinx.android.synthetic.main.activity_web_front.*
 
@@ -17,14 +16,14 @@ class WebFront : AppCompatActivity() {
 
         text_back_wf.setOnClickListener{
             val intent = Intent(this@WebFront,
-                Home::class.java)
+                Navbar::class.java)
             startActivity(intent)
             finish()
         }
 
         btn_back_wf.setOnClickListener{
             val intent = Intent(this@WebFront,
-                Home::class.java)
+                Navbar::class.java)
             startActivity(intent)
             finish()
         }

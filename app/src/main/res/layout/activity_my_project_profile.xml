@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context=".MyProject.MyProjectPortfolio">
+    tools:context=".MyProject.MyProjectProfile">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             <ImageView
                 android:id="@+id/btn_back"
                 android:layout_alignParentLeft="true"
-                android:src="@drawable/ic_arrow_back"
+                android:src="@drawable/ic_arrow_back_white"
                 android:layout_width="25dp"
                 android:layout_height="25dp"/>
             <TextView
@@ -58,7 +58,6 @@
             android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-
         <RelativeLayout
             android:gravity="center_horizontal"
             android:layout_marginTop="5dp"
@@ -143,7 +142,7 @@
                 <ImageView
                     android:layout_width="140dp"
                     android:layout_height="3dp"
-                    android:layout_gravity="center"
+                    android:layout_gravity="left"
                     android:src="@drawable/shape_line_pink" />
 
                 <ImageView

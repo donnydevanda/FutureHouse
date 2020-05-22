@@ -1,4 +1,4 @@
-package com.example.futurehouse
+package com.example.futurehouse.Fragment
 
 import android.app.Activity
 import android.content.Intent
@@ -15,8 +15,6 @@ import com.example.futurehouse.R
 import com.example.futurehouse.Utils.Preferences
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.activity_job_description_page.*
-import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_profile.*
 
 /**

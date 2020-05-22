@@ -54,13 +54,13 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="50dp"
             android:gravity="start"
-            android:text="@string/name"
+            android:text="@string/whatsapp_number"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/form_name"
+            android:id="@+id/form_whatsapp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
@@ -78,13 +78,13 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="50dp"
             android:gravity="start"
-            android:text="@string/phone_number"
+            android:text="@string/facebook_link"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/form_phonenumber"
+            android:id="@+id/form_facebook"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
@@ -93,6 +93,30 @@
             android:layout_marginBottom="5dp"
             android:background="@drawable/shape_rectangle_white"
             android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="start"
+            android:text="@string/linkedin_link"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/form_linkedin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_rectangle_white"
             android:padding="10dp"
             android:textColor="@color/colorPrimaryDark" />
 
@@ -120,32 +144,8 @@
             android:padding="10dp"
             android:textColor="@color/colorPrimaryDark" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="50dp"
-            android:gravity="start"
-            android:text="@string/email"
-            android:textColor="@color/colorPrimary"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/form_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/shape_rectangle_white"
-            android:padding="10dp"
-            android:textColor="@color/colorPrimaryDark" />
-
         <Button
-            android:id="@+id/btn_next"
+            android:id="@+id/btn_save_ep"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
@@ -175,7 +175,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/ic_arrow_back" />
+        app:srcCompat="@drawable/ic_arrow_back_white" />
 
     <TextView
         android:id="@+id/text_back"

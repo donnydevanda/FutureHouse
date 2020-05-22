@@ -29,7 +29,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/ic_arrow_back" />
+                    app:srcCompat="@drawable/ic_arrow_back_white" />
 
                 <TextView
                     android:id="@+id/text_back_wf"

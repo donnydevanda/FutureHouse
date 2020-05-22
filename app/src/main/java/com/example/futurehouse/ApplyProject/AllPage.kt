@@ -7,7 +7,6 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.futurehouse.CreateProject.Project
 import com.example.futurehouse.CreateProject.ProjectAdapter
-import com.example.futurehouse.Home
 import com.example.futurehouse.R
 import com.example.futurehouse.Utils.Preferences
 import com.google.firebase.database.*

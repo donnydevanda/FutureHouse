@@ -3,7 +3,7 @@ package com.example.futurehouse.ApplyProject.UIUX
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.futurehouse.Home
+import com.example.futurehouse.Fragment.Navbar
 import com.example.futurehouse.R
 import kotlinx.android.synthetic.main.activity_u_i.*
 
@@ -15,14 +15,14 @@ class UI : AppCompatActivity() {
 
         text_back_ui.setOnClickListener{
             val intent = Intent(this@UI,
-                Home::class.java)
+                Navbar::class.java)
             startActivity(intent)
             finish()
         }
 
         text_back_ui.setOnClickListener{
             val intent = Intent(this@UI,
-                Home::class.java)
+                Navbar::class.java)
             startActivity(intent)
             finish()
         }

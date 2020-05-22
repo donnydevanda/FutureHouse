@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.futurehouse.Home
+import com.example.futurehouse.Fragment.Navbar
 import com.example.futurehouse.R
 import com.example.futurehouse.Utils.Preferences
 import com.google.firebase.database.*
@@ -66,7 +66,7 @@ class SignIn : AppCompatActivity() {
                         finishAffinity()
 
                         val intent = Intent(this@SignIn,
-                            Home::class.java)
+                            Navbar::class.java)
                         startActivity(intent)
 
                     } else {

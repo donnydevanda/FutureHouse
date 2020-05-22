@@ -2,11 +2,9 @@ package com.example.futurehouse.ApplyProject.WebDeveloper
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.futurehouse.Home
+import com.example.futurehouse.Fragment.Navbar
 import com.example.futurehouse.R
-import kotlinx.android.synthetic.main.activity_u_i.*
 import kotlinx.android.synthetic.main.activity_u_i.text_left
 import kotlinx.android.synthetic.main.activity_web_back.*
 
@@ -19,14 +17,14 @@ class WebBack : AppCompatActivity() {
 
         text_back_wb.setOnClickListener{
             val intent = Intent(this@WebBack,
-                Home::class.java)
+                Navbar::class.java)
             startActivity(intent)
             finish()
         }
 
         text_back_wb.setOnClickListener{
             val intent = Intent(this@WebBack,
-                Home::class.java)
+                Navbar::class.java)
             startActivity(intent)
             finish()
         }

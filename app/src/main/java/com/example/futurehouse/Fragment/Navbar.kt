@@ -1,16 +1,17 @@
-package com.example.futurehouse
+package com.example.futurehouse.Fragment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.activity_home.*
+import com.example.futurehouse.R
+import kotlinx.android.synthetic.main.activity_navbar.*
 
-class Home : AppCompatActivity() {
+class Navbar : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_navbar)
 
         val fragmentHome = HomeFragment()
         val fragmentProject = ProjectFragment()
@@ -21,25 +22,43 @@ class Home : AppCompatActivity() {
         nb_home.setOnClickListener {
             setFragment(fragmentHome)
 
-            changeIcon(nb_home, R.drawable.navbar_home_active)
-            changeIcon(nb_project, R.drawable.navbar_my_project_off)
-            changeIcon(nb_profile, R.drawable.navbar_profile_off)
+            changeIcon(nb_home,
+                R.drawable.navbar_home_active
+            )
+            changeIcon(nb_project,
+                R.drawable.navbar_my_project_off
+            )
+            changeIcon(nb_profile,
+                R.drawable.navbar_profile_off
+            )
         }
 
         nb_project.setOnClickListener {
             setFragment(fragmentProject)
 
-            changeIcon(nb_home, R.drawable.navbar_home_off)
-            changeIcon(nb_project, R.drawable.navbar_my_project_active)
-            changeIcon(nb_profile, R.drawable.navbar_profile_off)
+            changeIcon(nb_home,
+                R.drawable.navbar_home_off
+            )
+            changeIcon(nb_project,
+                R.drawable.navbar_my_project_active
+            )
+            changeIcon(nb_profile,
+                R.drawable.navbar_profile_off
+            )
         }
 
         nb_profile.setOnClickListener {
             setFragment(fragmentProfile)
 
-            changeIcon(nb_home, R.drawable.navbar_home_off)
-            changeIcon(nb_project, R.drawable.navbar_my_project_off)
-            changeIcon(nb_profile, R.drawable.navbar_profile_active)
+            changeIcon(nb_home,
+                R.drawable.navbar_home_off
+            )
+            changeIcon(nb_project,
+                R.drawable.navbar_my_project_off
+            )
+            changeIcon(nb_profile,
+                R.drawable.navbar_profile_active
+            )
         }
     }
 

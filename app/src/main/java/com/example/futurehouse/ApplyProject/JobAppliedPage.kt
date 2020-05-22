@@ -3,7 +3,7 @@ package com.example.futurehouse.ApplyProject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.futurehouse.Home
+import com.example.futurehouse.Fragment.Navbar
 import com.example.futurehouse.R
 import kotlinx.android.synthetic.main.activity_job_applied_page.*
 
@@ -15,7 +15,7 @@ class JobAppliedPage : AppCompatActivity() {
 
         btn_apply.setOnClickListener{
             val intent = Intent(this@JobAppliedPage,
-                Home::class.java)
+                Navbar::class.java)
             startActivity(intent)
         }
     }

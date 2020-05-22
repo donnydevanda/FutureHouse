@@ -9,7 +9,7 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
 import android.widget.Toast
-import com.example.futurehouse.Home
+import com.example.futurehouse.Fragment.Navbar
 import com.example.futurehouse.R
 import com.example.futurehouse.Utils.Preferences
 import com.bumptech.glide.Glide
@@ -63,7 +63,7 @@ class SignUpPhoto : AppCompatActivity(), PermissionListener {
             finishAffinity()
 
             val intent = Intent(this@SignUpPhoto,
-                Home::class.java)
+                Navbar::class.java)
             startActivity(intent)
         }
 
@@ -85,7 +85,7 @@ class SignUpPhoto : AppCompatActivity(), PermissionListener {
 
                         finishAffinity()
                         val intent = Intent(this@SignUpPhoto,
-                            Home::class.java)
+                            Navbar::class.java)
                         startActivity(intent)
 
                     }

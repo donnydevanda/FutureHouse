@@ -1,4 +1,4 @@
-package com.example.futurehouse
+package com.example.futurehouse.Fragment
 
 import android.app.Activity
 import android.content.Intent
@@ -13,6 +13,7 @@ import com.example.futurehouse.ApplyProject.AllPage
 import com.example.futurehouse.ApplyProject.UIUX.UI
 import com.example.futurehouse.ApplyProject.WebDeveloper.WebFront
 import com.example.futurehouse.CreateProject.CreateProject
+import com.example.futurehouse.R
 import com.example.futurehouse.Utils.Preferences
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase

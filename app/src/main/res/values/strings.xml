@@ -67,6 +67,10 @@
     <string name="user_experience_desc">User Experience Desc</string>
     <string name="duration">Duration</string>
     <string name="duration_desc">Duration Desc</string>
+    <string name="facebook_link">FACEBOOK LINK</string>
+    <string name="linkedin_link">LINKEDIN LINK</string>
+    <string name="whatsapp_number">WHATSAPP NUMBER</string>
+    <string name="start_project">Start Project</string>
 
     <string-array name="brew_array">
         <item>Cappuccino</item>
