@@ -1,4 +1,4 @@
-package com.example.futurehouse.CreateProject
+package com.example.futurehouse.ApplyProject
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

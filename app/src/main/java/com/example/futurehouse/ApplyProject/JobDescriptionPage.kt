@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
-import com.example.futurehouse.CreateProject.Project
 import com.example.futurehouse.R
 import kotlinx.android.synthetic.main.activity_job_description_page.*
 

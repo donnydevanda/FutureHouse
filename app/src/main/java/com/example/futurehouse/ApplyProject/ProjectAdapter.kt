@@ -1,4 +1,4 @@
-package com.example.futurehouse.CreateProject
+package com.example.futurehouse.ApplyProject
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,11 +8,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
 import com.example.futurehouse.R
 
 class ProjectAdapter(private var data: List<Project>,
-                        private val listener: (Project) -> Unit)
+                     private val listener: (Project) -> Unit)
     : RecyclerView.Adapter<ProjectAdapter.LeagueViewHolder>() {
 
     lateinit var ContextAdapter : Context
