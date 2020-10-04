@@ -1,5 +1,7 @@
 # FutureHouse
-SE Project
+
+Prototype:
+https://xd.adobe.com/view/6166e902-9b5e-4898-7f94-6c9083a9dc03-1757/
 
 Our project name is FutureHouse, the main feature of the apps is to connect a client who want to create a IT project with
 a IT developer and/or designer who want to work on a project. Now by using smartphone, everyone can create they own project, 
